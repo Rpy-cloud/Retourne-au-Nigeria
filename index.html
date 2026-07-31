@@ -1,0 +1,187 @@
+<html lang="fr"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Retourne au Nigeria</title>
+
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="TresBon.png">
+    <meta property="og:url" content="">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="TresBon.png">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            background:
+                radial-gradient(circle at top left, #bbee68, #c640fb),
+                radial-gradient(circle at bottom right, #f48d27, #a10c5c);
+            animation: bgmove 10s infinite alternate;
+        }
+
+        @keyframes bgmove {
+            0% {
+                background-position: left top, right bottom;
+            }
+
+            100% {
+                background-position: right top, left bottom;
+            }
+        }
+
+        .container {
+            width: 92%;
+            max-width: 950px;
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 30px;
+            padding: 35px;
+            box-shadow: 0 0 50px rgba(0, 140, 255, 0.35);
+            position: relative;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-8px);
+            }
+        }
+
+        .container::before {
+            content: "";
+            position: absolute;
+            inset: -2px;
+            border-radius: 32px;
+            background: linear-gradient(45deg,
+                    #00bfff,
+                    #004cff,
+                    #00e1ff,
+                    #004cff);
+            z-index: -1;
+            filter: blur(12px);
+            opacity: 0.7;
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+            font-size: 3rem;
+            margin-bottom: 20px;
+            text-shadow:
+                0 0 15px #00bfff,
+                0 0 35px #0066ff;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #d8ecff;
+            font-size: 1.15rem;
+            margin-bottom: 30px;
+            line-height: 1.7;
+        }
+
+        .video-over {}
+
+        .video-box {
+            position: relative;
+            overflow: hidden;
+            border-radius: 25px;
+            box-shadow: 0 10px 40px rgba(0, 140, 255, 0.5);
+            background: rgba(0, 0, 0, 0.3);
+            padding: 20px 0;
+        }
+        .img-responsive {
+            display: block;
+            width: 80%;
+            max-width: 300px;
+            height: auto;
+            margin: 0 auto;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        .video-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(transparent,
+                    rgba(0, 0, 0, 0.55));
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            padding-bottom: 35px;
+            pointer-events: none;
+        }
+
+        .conteneur-aligne {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .conteneur-aligne video,
+        .conteneur-aligne img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .footer {
+            margin-top: 28px;
+            text-align: center;
+            color: #cfe7ff;
+            line-height: 1.7;
+        }
+
+        @media(max-width:768px) {
+            h1 {
+                font-size: 2.1rem;
+            }
+
+            .container {
+                padding: 20px;
+            }
+
+            .subtitle {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="subtitle">
+        <div class="conteneur-aligne" style="margin: 125px;">
+            <img src="TresBon.png" alt="image" class="video-over">
+        </div>
+    </div>
+
+    <div class="footer"></div>
+    </div>
+
+
+
+
+
+
+</body></html>
