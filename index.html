@@ -2,7 +2,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Retourne au Nigeria</title>
+    <title>tueuse d'innocent Retourne au Nigeria</title>
 
     <meta property="og:title" content="">
     <meta property="og:description" content="">
@@ -25,7 +25,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            overflow: hidden;
+            overflow-x: hidden;
             background:
                 radial-gradient(circle at top left, #bbee68, #c640fb),
                 radial-gradient(circle at bottom right, #f48d27, #a10c5c);
@@ -43,7 +43,7 @@
         }
 
         .container {
-            width: 92%;
+            width: 96%;
             max-width: 950px;
             background: rgba(255, 255, 255, 0.08);
             backdrop-filter: blur(15px);
@@ -134,14 +134,20 @@
 
         .conteneur-aligne {
             display: flex;
-            gap: 20px;
+            justify-content: center;
             align-items: center;
+            width: 100%;
         }
 
         .conteneur-aligne video,
         .conteneur-aligne img {
-            max-width: 650%;
+            display: block;
+            width: 100%;
+            max-width: 750px;
             height: auto;
+            margin: 0 auto;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
         }
 
         .footer {
@@ -157,11 +163,40 @@
             }
 
             .container {
-                padding: 20px;
+                width: 97%;
+                padding: 15px 8px;
             }
 
             .subtitle {
                 font-size: 1rem;
+                margin-bottom: 15px;
+            }
+
+            .video-box {
+                padding: 8px 0;
+            }
+
+            .conteneur-aligne img,
+            .conteneur-aligne video {
+                width: 100%;
+                max-width: 100%;
+            }
+        }
+
+        @media(max-width:480px) {
+            .container {
+                width: 100%;
+                padding: 10px 5px;
+                border-radius: 18px;
+            }
+
+            .video-box {
+                border-radius: 15px;
+            }
+
+            .conteneur-aligne img,
+            .conteneur-aligne video {
+                border-radius: 10px;
             }
         }
     </style>
@@ -171,17 +206,12 @@
 
     <div class="container">
         <div class="subtitle">
-        <div class="conteneur-aligne" style="margin: 125px;">
+        <div class="conteneur-aligne">
             <img src="TresBon.png" alt="image" class="video-over">
         </div>
     </div>
 
     <div class="footer"></div>
     </div>
-
-
-
-
-
 
 </body></html>
